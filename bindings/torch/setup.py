@@ -97,7 +97,7 @@ if os.system("nvcc --version") == 0:
 min_compute_capability = min(compute_capabilities)
 
 base_nvcc_flags = [
-	"-std=c++14",
+	"-std=c++17",
 	"--extended-lambda",
 	"--expt-relaxed-constexpr",
 	# The following definitions must be undefined
